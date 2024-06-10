@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Statement</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            color: #000000;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .help {
+            text-align: right;
+        }
+
+        .help p {
+            margin: 0;
+            color: #6b7280;
+        }
+
+        .statement-info,
+        .account-info,
+        .transactions {
+            margin-top: 20px;
+        }
+
+        .statement-info p,
+        .account-info p {
+            margin: 5px 0;
+            color: #000000;
+        }
+
+        .statement-info .customer-details strong,
+        .statement-info .statement-dates strong,
+        .account-info .address strong,
+        .account-info .account-holder strong,
+        .account-info .account-number strong,
+        .account-info .bank-name strong {
+            color: #6b7280;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            color: #000000;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #dddddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .debit {
+            color: #ff0000;
+        }
+
+        .credit {
+            color: #008000;
+        }
+
+        .total {
+            font-weight: bold;
+        }
+
+        .align-right {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="https://via.placeholder.com/150x50.png?text=Geegpay+Logo" alt="Geegpay Logo" class="logo">
+            <div class="help">
+                <p>Need any help?</p>
+                <p>We're here to help, so if something isn't right just contact us:</p>
+                <p><a href="mailto:support@geegpay.com">support@geegpay.com</a></p>
+            </div>
+        </header>
+        <section class="statement-info">
+            <div class="customer-details">
+                <p><strong>Customer name</strong></p>
+                <p>Raenest/CHRISTIAN UCHECHUKWU NDUBISI</p>
+            </div>
+            <div class="statement-dates">
+                <p><strong>NGN statement</strong></p>
+                <p>29 January, 2024 (UTC +00:00) - 29 January, 2024 (UTC +00:00)</p>
+                <p>Generated on: 20 February, 2024</p>
+            </div>
+        </section>
+        <section class="account-info">
+            <div class="address">
+                <p><strong>Customer's Address</strong></p>
+                <p>BLK G FLAT 2 WETLAND ESTATE WUYE Und St., 900271 FCT - Abuja, NG</p>
+            </div>
+            <div class="account-holder">
+                <p><strong>Account holder</strong></p>
+                <p>Raenest/CHRISTIAN UCHECHUKWU NDUBISI</p>
+            </div>
+            <div class="account-number">
+                <p><strong>Account Number</strong></p>
+                <p>1884161285</p>
+            </div>
+            <div class="bank-name">
+                <p><strong>Bank Name</strong></p>
+                <p>Kredi Money MFB LTD</p>
+            </div>
+        </section>
+        <section class="transactions">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">NGN account on 20 February, 2024</th>
+                        <th class="align-right">₦ 0</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Christian</td>
+                        <td>29 January 2024 21:06:55 | Reference: tran_428a94a32d9f588</td>
+                        <td class="debit align-right">- ₦ 17,840</td>
+                    </tr>
+                    <tr>
+                        <td>Raenest/CR/FRM MOB/UTO/RAENEST/CHRIST/try2/21186342454</td>
+                        <td>29 January 2024 20:59:14 | Reference: tran_1bf5a042e97bad</td>
+                        <td class="credit align-right">₦ 17,840</td>
+                    </tr>
+                    <tr>
+                        <td>Christian</td>
+                        <td>29 January 2024 20:47:45 | Reference: tran_912fb9e5bd3895f</td>
+                        <td class="debit align-right">- ₦ 10,000</td>
+                    </tr>
+                    <tr>
+                        <td>Raenest/CR/FRM MOB/UTO/RAENEST/CHRIST/testre/21184710451</td>
+                        <td>29 January 2024 20:31:14 | Reference: tran_2aa03ab26e3b6ca6</td>
+                        <td class="credit align-right">₦ 10,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
